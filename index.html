@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html; charset = utf-8" http-equiv="Content-Type"/>
+  <title>IndexedDB explainer</title>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+        referrerpolicy="no-referrer" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<form class="form">
+  <label for="name" class="u-full-width">
+    Task name
+    <input id="name" type="text" name="name" class="u-full-width"/>
+  </label>
+  <label for="task" class="u-full-width">
+    Task description
+    <input id="task" type="text" name="task" class="u-full-width"/>
+  </label>
+  <button type="submit">Add new task</button>
+</form>
+<table class="u-full-width">
+  <thead>
+  <tr>
+    <th>Task</th>
+    <th>Description</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody id="task-list">
+
+  </tbody>
+</table>
+<script src="index.js" type="module"></script>
+</body>
+</html>
